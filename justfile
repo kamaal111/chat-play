@@ -6,7 +6,7 @@ default:
 
 # Run dev server
 run-dev: initialize-firebase install-modules
-    pnpm run dev --host
+    pnpm run dev
 
 # Format
 format:

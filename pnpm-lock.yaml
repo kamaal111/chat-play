@@ -23,6 +23,9 @@ importers:
       "@eslint/js":
         specifier: ^9.9.0
         version: 9.9.1
+      "@types/express":
+        specifier: ^4.17.21
+        version: 4.17.21
       "@types/react":
         specifier: ^18.3.3
         version: 18.3.4
@@ -1172,16 +1175,46 @@ packages:
         integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==,
       }
 
+  "@types/body-parser@1.19.5":
+    resolution:
+      {
+        integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==,
+      }
+
   "@types/caseless@0.12.5":
     resolution:
       {
         integrity: sha512-hWtVTC2q7hc7xZ/RLbxapMvDMgUnDvKvMOpKal4DrMyfGBUfB1oKaZlIRr6mJL+If3bAP6sV/QneGzF6tJjZDg==,
       }
 
+  "@types/connect@3.4.38":
+    resolution:
+      {
+        integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==,
+      }
+
   "@types/estree@1.0.5":
     resolution:
       {
         integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==,
+      }
+
+  "@types/express-serve-static-core@4.19.5":
+    resolution:
+      {
+        integrity: sha512-y6W03tvrACO72aijJ5uF02FRq5cgDR9lUxddQ8vyF+GvmjJQqbzDcJngEjURc+ZsG31VI3hODNZJ2URj86pzmg==,
+      }
+
+  "@types/express@4.17.21":
+    resolution:
+      {
+        integrity: sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ==,
+      }
+
+  "@types/http-errors@2.0.4":
+    resolution:
+      {
+        integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==,
       }
 
   "@types/json-schema@7.0.15":
@@ -1196,6 +1229,12 @@ packages:
         integrity: sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==,
       }
 
+  "@types/mime@1.3.5":
+    resolution:
+      {
+        integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==,
+      }
+
   "@types/node@22.5.0":
     resolution:
       {
@@ -1206,6 +1245,18 @@ packages:
     resolution:
       {
         integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==,
+      }
+
+  "@types/qs@6.9.15":
+    resolution:
+      {
+        integrity: sha512-uXHQKES6DQKKCLh441Xv/dwxOq1TVS3JPUMlEqoEglvlhR6Mxnlew/Xq/LRVHpLyk7iK3zODe1qYHIMltO7XGg==,
+      }
+
+  "@types/range-parser@1.2.7":
+    resolution:
+      {
+        integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==,
       }
 
   "@types/react-dom@18.3.0":
@@ -1224,6 +1275,18 @@ packages:
     resolution:
       {
         integrity: sha512-G3sY+NpsA9jnwm0ixhAFQSJ3Q9JkpLZpJbI3GMv0mIAT0y3mRabYeINzal5WOChIiaTEGQYlHOKgkaM9EisWHw==,
+      }
+
+  "@types/send@0.17.4":
+    resolution:
+      {
+        integrity: sha512-x2EM6TJOybec7c52BX0ZspPodMsQUd5L6PRwOunVyVUhXiBSKf3AezDL8Dgvgt5o0UfKNfuA0eMLr2wLT4AiBA==,
+      }
+
+  "@types/serve-static@1.15.7":
+    resolution:
+      {
+        integrity: sha512-W8Ym+h8nhuRwaKPaDw34QUkwsGi6Rc4yYqvKFo5rm2FUEhCFbzVWrxXUxuKK8TASjWsysJY0nsmNCGhCOIsrOw==,
       }
 
   "@types/tough-cookie@4.0.5":
@@ -6487,19 +6550,50 @@ snapshots:
 
   "@tootallnate/quickjs-emscripten@0.23.0": {}
 
+  "@types/body-parser@1.19.5":
+    dependencies:
+      "@types/connect": 3.4.38
+      "@types/node": 22.5.0
+
   "@types/caseless@0.12.5": {}
 
+  "@types/connect@3.4.38":
+    dependencies:
+      "@types/node": 22.5.0
+
   "@types/estree@1.0.5": {}
+
+  "@types/express-serve-static-core@4.19.5":
+    dependencies:
+      "@types/node": 22.5.0
+      "@types/qs": 6.9.15
+      "@types/range-parser": 1.2.7
+      "@types/send": 0.17.4
+
+  "@types/express@4.17.21":
+    dependencies:
+      "@types/body-parser": 1.19.5
+      "@types/express-serve-static-core": 4.19.5
+      "@types/qs": 6.9.15
+      "@types/serve-static": 1.15.7
+
+  "@types/http-errors@2.0.4": {}
 
   "@types/json-schema@7.0.15": {}
 
   "@types/long@4.0.2": {}
+
+  "@types/mime@1.3.5": {}
 
   "@types/node@22.5.0":
     dependencies:
       undici-types: 6.19.8
 
   "@types/prop-types@15.7.12": {}
+
+  "@types/qs@6.9.15": {}
+
+  "@types/range-parser@1.2.7": {}
 
   "@types/react-dom@18.3.0":
     dependencies:
@@ -6516,6 +6610,17 @@ snapshots:
       "@types/node": 22.5.0
       "@types/tough-cookie": 4.0.5
       form-data: 2.5.1
+
+  "@types/send@0.17.4":
+    dependencies:
+      "@types/mime": 1.3.5
+      "@types/node": 22.5.0
+
+  "@types/serve-static@1.15.7":
+    dependencies:
+      "@types/http-errors": 2.0.4
+      "@types/node": 22.5.0
+      "@types/send": 0.17.4
 
   "@types/tough-cookie@4.0.5": {}
 
