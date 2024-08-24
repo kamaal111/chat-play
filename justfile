@@ -12,6 +12,14 @@ run-dev: initialize-firebase install-modules
 format:
     pnpm run format
 
+# Firebase login
+firebase-login:
+    pnpm exec firebase login
+
+# Firebase deploy
+firebase-deploy:
+    pnpm exec firebase deploy
+
 # Set up dev container. This step runs after building the dev container
 post-dev-container-create:
     just .devcontainer/post-create
