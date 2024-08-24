@@ -23,3 +23,4 @@ esac
 # pnpm end
 
 alias pn=pnpm
+alias pnx=pnpm exec
