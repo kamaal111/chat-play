@@ -12,6 +12,10 @@ run-dev: initialize-firebase install-modules
 format:
     pnpm run format
 
+# Start firebase emulators
+start-firebase-emulator:
+    pnpm exec firebase emulators:start
+
 # Firebase login
 firebase-login:
     pnpm exec firebase login
@@ -34,4 +38,4 @@ initialize-firebase:
 
 [private]
 install-modules:
-    pnpm i
+    echo Y | pnpm i

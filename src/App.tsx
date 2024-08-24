@@ -1,14 +1,19 @@
-import { useState } from "react";
+import database from "./database";
 
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
+      <button
+        onClick={() => {
+          database.set({
+            path: "users/1",
+            data: { email: "kamaal@email.io", username: "kamaal" },
+          });
+        }}
+      >
+        Add something
       </button>
     </>
   );

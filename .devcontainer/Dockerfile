@@ -1,6 +1,8 @@
 FROM node:22-bookworm-slim
 
-RUN apt update && apt install -y zsh curl git vim httpie jq unzip bash
+RUN apt update && apt install -y zsh curl git vim httpie jq unzip bash \
+    # Java
+    default-jre default-jdk
 
 # Oh My Zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
