@@ -8,6 +8,10 @@ default:
 run-dev: initialize-firebase install-modules
     pnpm run dev --host
 
+# Format
+format:
+    pnpm run format
+
 # Set up dev container. This step runs after building the dev container
 post-dev-container-create:
     just .devcontainer/post-create
