@@ -1,0 +1,9 @@
+.input {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  width: 8rem;
+  align-self: flex-start;
+}

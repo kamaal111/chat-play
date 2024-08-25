@@ -1,6 +1,8 @@
+import path from "node:path";
 import express from "express";
 import ViteExpress from "vite-express";
 import logger from "morgan";
+import cors from "cors";
 
 import settings from "./settings";
 import type { AppRequest, AppRouter } from "./types";
@@ -31,11 +33,12 @@ class App {
   private initializeMiddleware = () => {
     this.app.use(logger("dev"));
     this.app.use(express.json());
+    this.app.use(cors());
   };
 
   private initializeRoutes = (routers: AppRouter[]) => {
     for (const router of routers) {
-      this.app.use(router.path, router.router);
+      this.app.use(path.join("/api/v1", router.path), router.router);
     }
 
     this.app.use(this.errorHandler);

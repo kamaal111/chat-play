@@ -1,22 +1,9 @@
-import database from "./database";
+import SignUp from "./users/sign-up";
 
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <button
-        onClick={() => {
-          database.messaging.set({
-            path: "users/1",
-            data: { email: "kamaal@email.io", username: "kamaal" },
-          });
-        }}
-      >
-        Add something
-      </button>
-    </>
-  );
+  return <SignUp />;
 }
 
 export default App;
