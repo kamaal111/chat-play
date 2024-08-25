@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set as firebaseSet } from "firebase/database";
 import type { Database as FirebaseDatabase } from "firebase/database";
 
-import { firebaseConfig } from "../config";
+import settings from "./settings";
 
 class Database {
   private database: FirebaseDatabase;
 
   constructor() {
-    const app = initializeApp(firebaseConfig);
+    const app = initializeApp(settings.firebase);
     this.database = getDatabase(app);
   }
 

@@ -1,4 +1,7 @@
+set export
 set dotenv-load
+
+SERVER_PORT := "3000"
 
 # List available commands
 default:
