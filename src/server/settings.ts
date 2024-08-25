@@ -8,7 +8,7 @@ function validateSettings() {
   try {
     return settingsSchema.parse(process.env);
   } catch (error) {
-    console.error("🐸🐸🐸 environment validation error", error);
+    console.error("environment validation error", error);
     throw error;
   }
 }

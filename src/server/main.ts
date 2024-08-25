@@ -1,10 +1,13 @@
-import express from "express";
-import ViteExpress from "vite-express";
+import dotenv from "dotenv";
 
-import settings from "./settings";
+dotenv.config();
 
-const app = express();
+import App from "./app";
+import { UsersRouter } from "./users";
+import Database from "./database";
 
-ViteExpress.listen(app, settings.SERVER_PORT, () =>
-  console.log("Server is listening on port 3000..."),
-);
+const database = new Database();
+const users = new UsersRouter({ database });
+const app = new App({ routers: [users] });
+
+app.listen();

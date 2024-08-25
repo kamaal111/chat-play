@@ -7,7 +7,7 @@ function App() {
     <>
       <button
         onClick={() => {
-          database.set({
+          database.messaging.set({
             path: "users/1",
             data: { email: "kamaal@email.io", username: "kamaal" },
           });

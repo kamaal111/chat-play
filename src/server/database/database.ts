@@ -1,5 +1,5 @@
-import settings from "./settings";
 import { Messaging } from "../../shared/database";
+import settings from "./settings";
 
 class Database {
   messaging: Messaging;
@@ -9,6 +9,4 @@ class Database {
   }
 }
 
-const database = new Database();
-
-export default database;
+export default Database;

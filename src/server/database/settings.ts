@@ -10,7 +10,7 @@ const envSchema = z.object({
 
 function validateEnv() {
   try {
-    return envSchema.parse(import.meta.env);
+    return envSchema.parse(process.env);
   } catch (error) {
     console.error("environment validation error", error);
     throw error;
