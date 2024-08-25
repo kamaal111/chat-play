@@ -7,11 +7,10 @@ import UsersController from "./controller";
 class UsersRouter implements AppRouter {
   path = "/users";
   router = Router();
-  database: Database;
-  private controller = new UsersController();
+  private controller: UsersController;
 
   constructor({ database }: { database: Database }) {
-    this.database = database;
+    this.controller = new UsersController({ database });
     this.initializeRoutes();
   }
 

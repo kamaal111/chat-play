@@ -11,6 +11,7 @@ const INTERNAL_SERVER_ERROR_MESSAGE = "Things messed up, sorry!";
 const STATUS_CODE_TO_MESSAGE: Record<number, string> = {
   400: "Bad Request",
   404: "Not Found",
+  409: "Conflict",
   500: INTERNAL_SERVER_ERROR_MESSAGE,
 };
 
